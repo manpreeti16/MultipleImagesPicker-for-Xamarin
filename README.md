@@ -19,10 +19,11 @@ Below are the details of features in the app:
 10. If user says, "Don't ask me again", they will then be redirected to app settings page, where they have to manually give the permission for Storage in Android, Camera, Photos& Microphone in iOS.
 11. Clone the code and build it and it is ready to be used in Emulator or devices
 
-# External refernces used
+# External references used
 https://stackoverflow.com/questions/33750101/how-to-select-multiple-images-from-gallery-for-android-and-ios-device-using-xama/34141450#34141450
 
 https://github.com/jamesmontemagno/MediaPlugin
 Follow steps mentioned in this to setup camera and video recording in app.
 
+# Screenshots
 
