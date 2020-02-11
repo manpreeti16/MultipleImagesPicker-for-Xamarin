@@ -25,5 +25,5 @@ https://stackoverflow.com/questions/33750101/how-to-select-multiple-images-from-
 https://github.com/jamesmontemagno/MediaPlugin
 Follow steps mentioned in this to setup camera and video recording in app.
 
-# Screenshots
+
 
