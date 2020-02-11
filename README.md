@@ -1,6 +1,8 @@
 # MultipleImagesPicker-for-Xamarin
 Multiple images picker for Xamarin, capture video or images, select video from gallery, make phone call or send email.
 
+![alt text](https://github.com/manpreeti16/MultipleImagesPicker-for-Xamarin/blob/master/multipleimagesselected.jpeg)
+
 # Purpose
 App can be used to select multiple images from a phone for Android and iOS. Select a video from phone. Capture a photo or video. 
 All these will be compressed, so that it is easy to send them over the network as original bytes may be very large.
