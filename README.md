@@ -25,5 +25,23 @@ https://stackoverflow.com/questions/33750101/how-to-select-multiple-images-from-
 https://github.com/jamesmontemagno/MediaPlugin
 Follow steps mentioned in this to setup camera and video recording in app.
 
+# Screenshots
+
+Permission popup for Phone call
+![alt text](https://github.com/manpreeti16/MultipleImagesPicker-for-Xamarin/blob/master/1.jpeg)
+
+Making a phone call
+![alt text](https://github.com/manpreeti16/MultipleImagesPicker-for-Xamarin/blob/master/7.jpeg)
+
+Popup if "Don't ask me again" is selected and before redirecting to app settings page
+![alt text](https://github.com/manpreeti16/MultipleImagesPicker-for-Xamarin/blob/master/6.jpeg)
+
+Redirected to APP Settings if "Don't ask me again" is selected
+![alt text](https://github.com/manpreeti16/MultipleImagesPicker-for-Xamarin/blob/master/2.jpeg)
+
+Multiple Images Picked
+![alt text](https://github.com/manpreeti16/MultipleImagesPicker-for-Xamarin/blob/master/4.jpeg)
+
+
 
 
