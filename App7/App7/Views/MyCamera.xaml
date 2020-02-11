@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.Views.MyCamera">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Make a call to: "/>
+                        <Label TextDecorations="Underline" TextColor="Blue" HorizontalOptions="EndAndExpand" x:Name="phoonenumber" Text="9611457008"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <!--<TapGestureRecognizer
+                        Command="{Binding Path=BindingContext.CallCommand, Source={x:Reference Name=ContactUsView}}" 
+                        CommandParameter="{Binding Path=Text, Source={x:Reference ContactNo}}"/>-->
+                        <TapGestureRecognizer Command="{Binding CallCommand}"
+                                          CommandParameter="{Binding Path=Text, Source={x:Reference phoonenumber}}"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Send mail to: "/>
+                        <Label TextDecorations="Underline" TextColor="Blue" HorizontalOptions="EndAndExpand" x:Name="mailid" Text="mnk.kaur75@gmail.com"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding MailCommand}"
+                                          CommandParameter="{Binding Path=Text, Source={x:Reference mailid}}"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Button Text="Take Picture from Camera" Command="{Binding TakePicture}"/>
+                <Button Text="Record Video from Camera" Command="{Binding RecordVideo}"/>
+                <Button Text="Select Picture(s) from Gallery" Command="{Binding SelectPicture}"/>
+                <Button Text="Select Video from Gallery" Command="{Binding SelectVideo}"/>
+
+                <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Path of item: " Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="{Binding CompletePath, Mode=TwoWay}" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Original Size: " Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="{Binding OriginalBytes, Mode=TwoWay}" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Compressed Size: " Grid.Row="2" Grid.Column="0"/>
+                    <Label Text="{Binding CompressedBytes, Mode=TwoWay}" TextColor="Black" Grid.Row="2" Grid.Column="1"/>
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
